@@ -1,0 +1,6 @@
+project(ins)
+cmake_minimum_required(VERSION 3.10)
+include_directories(/usr/include/eigen3)
+add_executable(ins ins.cpp)
+#target_link_libraries( ins ${IMU_TK_LIBS})
+add_executable(ins2 ins2.cpp)
