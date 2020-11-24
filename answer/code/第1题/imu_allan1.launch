@@ -1,0 +1,11 @@
+<launch>
+    <node pkg="imu_utils" type="imu_readfile" name="imu_readfile" output="screen">
+        <param name="time_path" type="string" value= "/home/zsp/Desktop/imu/data1/time.csv"/>
+        <param name="gyro_path" type="string" value= "/home/zsp/Desktop/imu/data1/gyro-0.csv"/>
+        <param name="acc_path" type="string" value= "/home/zsp/Desktop/imu/data1/accel-0.csv"/>
+        <param name="imu_name" type="string" value= "imu"/>
+        <param name="data_save_path" type="string" value= "/home/zsp/Desktop/imu/allan1/"/>
+        <param name="max_time_min" type="int" value= "120"/>
+        <param name="max_cluster" type="int" value= "100"/>
+    </node>
+</launch>
